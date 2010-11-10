@@ -1,4 +1,5 @@
 #!/usr/bin/env pyhton2.6
+# -*- coding: utf-8 -*-
 
 # Copyright (C) 2010  Leonardo Silva Amaral
 

@@ -25,14 +25,14 @@ class PageTemplates():
     def tail(self):
         return ('\n\t</body>\n</html>')
     def table_head(self):
-        return('\t<table cellspacing="0" width="1040" height="600">\n\t\t<tr id="slides">\n\t\t\t')
+        return('\t<table cellspacing="0" width="1040" height="600">\n\t\t<tr id="slides">')
     def table_tail(self):
         return('\n\t\t</tr>\n\t\t</table>')
     def chat_iframe(self):
-        return ('<td id="slide" bgcolor="f4ffff"><iframe src="http://webchat.freenode.net?nick=EvidosolOuvinte.&channels=evidosol-secretaria%2Cevidosol-1%2Cevidosol-2%2Cevidosol-3%2Cevidosol-4&uio=OT10cnVlJjEwPXRydWUmMTE9MTIze7" width="550" height="600"></iframe></td>')
+        return ('\n\t\t\t<td id="slide" bgcolor="f4ffff"><iframe src="http://webchat.freenode.net?nick=EvidosolOuvinte.&channels=evidosol-secretaria%2Cevidosol-1%2Cevidosol-2%2Cevidosol-3%2Cevidosol-4&uio=OT10cnVlJjEwPXRydWUmMTE9MTIze7" width="550" height="600"></iframe></td>')
     def slide_iframe(self):
         # TODO: Implement this with a native way
-        return('<td id="slide" bgcolor="f4ffff"><iframe src="http://portugueslivre.org/chatslide/slide.php" width="550" height="600">')
+        return('\n\t\t\t<td id="slide" bgcolor="f4ffff"><iframe src="http://portugueslivre.org/chatslide/slide.php" width="550" height="600"></td>')
     
 class MainPage(webapp.RequestHandler):
     StartPage = PageTemplates()
